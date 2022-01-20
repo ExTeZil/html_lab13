@@ -16,9 +16,49 @@
         var kol = current_year - start_kollage;
         alert("Ви провчились в коледжi "+ kol + " роки");
     }
+    function t(number){
+        switch (number) {
+            case "1":
+                alert("Мімо!");
+                break;
+            case "2":
+                alert("Ви не вгадали!");
+                break;
+            case "3":
+                alert("Майже");
+                break;
+            case "4":
+                alert("Ви вгадали!");
+                break;
+            case "5":
+                alert("Ну почті");
+                break;
+            case "6":
+                alert("Спробуй ще(((");
+                break;
+            case "7":
+                alert("Пічально");
+                break;
+            case "8":
+                alert("Не твій день чувак");
+                break;
+            case "9":
+                alert("Косо");
+                break;
+            case "10":
+                alert("І не близько");
+                break;
+        }
+    }
 </script>
 
 <button onclick="f()">
+    пок
 </button>
+    <h3>Вася загадав число від 1 до 10 </h3>
+<form>
+<input type="number" id="input_number">
+    <button onclick="t(input_number.value)">Перевірити!</button>
+</form>
 </body>
 </html>
